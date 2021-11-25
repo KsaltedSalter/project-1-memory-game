@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Cute+Font&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <script src="./scripts/app.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Matchy Match Anime Boys</h1>
+
+      <div class="start-container" id="start-container">
+        <div class="start-box">
+          <h2>Matchy Match Anime Boys</h2>
+          <p>The rules are simple:</p>
+          <ul>
+            <li>There are 8 kawaii men behind each card</li>
+            <li>Click two cards and match up those pretty faces</li>
+            <li>Your flip count and time taken will be recorded</li>
+          </ul>
+          <p>Good luck and have fun!</p>
+          <img
+            id="start-image"
+            src="./images/all-might.gif"
+            alt="all might thumbs up"
+          />
+          <button id="start">start</button>
+        </div>
+      </div>
+
+      <section id="info-container">
+        <div id="time-container">
+          Time: <span id="time">00 mins 00 secs</span>
+        </div>
+        <div id="flips-container">Flips: <span id="flips">0</span></div>
+      </section>
+    </header>
+
+    <div id="grid">
+      <div class="card" data-framework="gojo-1">
+        <img class="front" src="./images/gojo-1.png" alt="gojo-1" />
+        <img class="back" src="./images/back-2.png" alt="sweat face" />
+      </div>
+      <div class="card" data-framework="gojo-1">
+        <img class="front" src="./images/gojo-1.png" alt="gojo-1" />
+        <img class="back" src="./images/back-2.png" alt="sweat face" />
+      </div>
+      <div class="card" data-framework="sasuke-2">
+        <img class="front" src="./images/sasuke-2.png" alt="sasuke-2" />
+        <img class="back" src="./images/back-2.png" alt="sweat face" />
+      </div>
+      <div class="card" data-framework="sasuke-2">
+        <img class="front" src="./images/sasuke-2.png" alt="sasuke-2" />
+        <img class="back" src="./images/back-2.png" alt="sweat face" />
+      </div>
+      <div class="card" data-framework="bakugou-1">
+        <img class="front" src="./images/bakugou-1.png" alt="bakugou-1" />
+        <img class="back" src="./images/back-2.png" alt="sweat face" />
+      </div>
+      <div class="card" data-framework="bakugou-1">
+        <img class="front" src="./images/bakugou-1.png" alt="bakugou-1" />
+        <img class="back" src="./images/back-2.png" alt="sweat face" />
+      </div>
+      <div class="card" data-framework="hinata-1">
+        <img class="front" src="./images/hinata-1.png" alt="hinata-1" />
+        <img class="back" src="./images/back-2.png" alt="sweat face" />
+      </div>
+      <div class="card" data-framework="hinata-1">
+        <img class="front" src="./images/hinata-1.png" alt="hinata-1" />
+        <img class="back" src="./images/back-2.png" alt="sweat face" />
+      </div>
+      <div class="card" data-framework="yato-1">
+        <img class="front" src="./images/yato-1.png" alt="yato-1" />
+        <img class="back" src="./images/back-2.png" alt="sweat face" />
+      </div>
+      <div class="card" data-framework="yato-1">
+        <img class="front" src="./images/yato-1.png" alt="yato-1" />
+        <img class="back" src="./images/back-2.png" alt="sweat face" />
+      </div>
+      <div class="card" data-framework="howl-1">
+        <img class="front" src="./images/howl-1.png" alt="howl-1" />
+        <img class="back" src="./images/back-2.png" alt="sweat face" />
+      </div>
+      <div class="card" data-framework="howl-1">
+        <img class="front" src="./images/howl-1.png" alt="howl-1" />
+        <img class="back" src="./images/back-2.png" alt="sweat face" />
+      </div>
+      <div class="card" data-framework="inosuke-1">
+        <img class="front" src="./images/inosuke-1.png" alt="inosuke-1" />
+        <img class="back" src="./images/back-2.png" alt="sweat face" />
+      </div>
+      <div class="card" data-framework="inosuke-1">
+        <img class="front" src="./images/inosuke-1.png" alt="inosuke-1" />
+        <img class="back" src="./images/back-2.png" alt="sweat face" />
+      </div>
+      <div class="card" data-framework="tamaki-1">
+        <img class="front" src="./images/tamaki-1.png" alt="tamaki-1" />
+        <img class="back" src="./images/back-2.png" alt="sweat face" />
+      </div>
+      <div class="card" data-framework="tamaki-1">
+        <img class="front" src="./images/tamaki-1.png" alt="tamaki-1" />
+        <img class="back" src="./images/back-2.png" alt="sweat face" />
+      </div>
+    </div>
+
+    <!-- <div id="grid-2">
+      <div class="card" data-framework="spike-1">
+        <img class="front" src="./images/spike-1.png" alt="spike-1" />
+        <img class="back" src="./images/back-2.png" alt="sweat face" />
+      </div>
+      <div class="card" data-framework="spike-1">
+        <img class="front" src="./images/spike-1.png" alt="spike-1" />
+        <img class="back" src="./images/back-2.png" alt="sweat face" />
+      </div>
+      <div class="card" data-framework="kyou-1">
+        <img class="front" src="./images/kyou-1.png" alt="kyou-1" />
+        <img class="back" src="./images/back-2.png" alt="sweat face" />
+      </div>
+      <div class="card" data-framework="kyou-1">
+        <img class="front" src="./images/kyou-1.png" alt="kyou-1" />
+        <img class="back" src="./images/back-2.png" alt="sweat face" />
+      </div>
+      <div class="card" data-framework="howl-1">
+        <img class="front" src="./images/howl-1.png" alt="howl-1" />
+        <img class="back" src="./images/back-2.png" alt="sweat face" />
+      </div>
+      <div class="card" data-framework="howl-1">
+        <img class="front" src="./images/howl-1.png" alt="howl-1" />
+        <img class="back" src="./images/back-2.png" alt="sweat face" />
+      </div>
+      <div class="card" data-framework="sensei-1">
+        <img class="front" src="./images/sensei-1.png" alt="sensei-1" />
+        <img class="back" src="./images/back-2.png" alt="sweat face" />
+      </div>
+      <div class="card" data-framework="sensei-1">
+        <img class="front" src="./images/sensei-1.png" alt="sensei-1" />
+        <img class="back" src="./images/back-2.png" alt="sweat face" />
+      </div>
+      <div class="card" data-framework="inosuke-1">
+        <img class="front" src="./images/inosuke-1.png" alt="inosuke-1" />
+        <img class="back" src="./images/back-2.png" alt="sweat face" />
+      </div>
+      <div class="card" data-framework="inosuke-1">
+        <img class="front" src="./images/inosuke-1.png" alt="inosuke-1" />
+        <img class="back" src="./images/back-2.png" alt="sweat face" />
+      </div>
+      <div class="card" data-framework="yato-1">
+        <img class="front" src="./images/yato-1.png" alt="yato-1" />
+        <img class="back" src="./images/back-2.png" alt="sweat face" />
+      </div>
+      <div class="card" data-framework="yato-1">
+        <img class="front" src="./images/yato-1.png" alt="yato-1" />
+        <img class="back" src="./images/back-2.png" alt="sweat face" />
+      </div>
+      <div class="card" data-framework="genos-1">
+        <img class="front" src="./images/genos-1.png" alt="genos-1" />
+        <img class="back" src="./images/back-2.png" alt="sweat face" />
+      </div>
+      <div class="card" data-framework="genos-1">
+        <img class="front" src="./images/genos-1.png" alt="genos-1" />
+        <img class="back" src="./images/back-2.png" alt="sweat face" />
+      </div>
+      <div class="card" data-framework="tatsu-1">
+        <img class="front" src="./images/tatsu-1.png" alt="tatsu-1" />
+        <img class="back" src="./images/back-2.png" alt="sweat face" />
+      </div>
+      <div class="card" data-framework="tatsu-1">
+        <img class="front" src="./images/tatsu-1.png" alt="tatsu-1" />
+        <img class="back" src="./images/back-2.png" alt="sweat face" />
+      </div>
+    </div> -->
+
+    <div class="again-container" id="again-container">
+      <div class="again-box">
+        <h2>Nice work!</h2>
+        <p>You made <span id="total-flips"> </span> moves</p>
+        <p>in <span id="total-time"> </span></p>
+        <img id="again-image" src="./images/good-job.gif" alt="ok sign" />
+        <button id="play-again">Play again</button>
+      </div>
+    </div>
+
+    <audio src="./sounds/gambare.wav" id="gambare"></audio>
+    <audio src="./sounds/good-job.wav" id="good-job"></audio>
+    <audio src="./sounds/sugoi-sugoi.wav" id="sugoi"></audio>
+    <audio src="./sounds/repeat.wav" id="repeat"></audio>
+    <audio src="./sounds/hayai.wav" id="hayai"></audio>
+    <audio src="./sounds/anime-wow.wav" id="wow"></audio>
+  </body>
+</html>
