@@ -15,8 +15,8 @@ First project on the Software Engineering course at General Assembly. The task w
 - [Process](#process)
 - [Challenges](#challenges)
 - [Wins](#wins)
-- [Key Learnings](#key learnings)
-- [Future Features](#future features)
+- [Key Learnings](#key-learnings)
+- [Future Features](#future-features)
 
 ## Technologies
 
